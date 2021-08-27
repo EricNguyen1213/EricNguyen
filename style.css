@@ -1,0 +1,120 @@
+body {
+    background-image: url("https://i0.wp.com/boingboing.net/wp-content/uploads/2018/05/cool-background1.png?fit=1192%2C600&ssl=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 94vh;
+    margin: 0px;
+}
+
+.top{
+    width:100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px;
+    height: 40vh;
+}
+
+.header{
+    border: double white 10px;
+    border-radius: 240px;
+    width: 170px;
+    height: 170px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    box-shadow: 5px 5px 50px black;
+    text-shadow: 5px 5px 10px black;
+}
+
+.navbar {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.option {
+    width: 220px;
+    background: white;
+    color:black;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: solid black 1px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.option > h3 {
+    margin:0px;
+}
+
+.content {
+    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+    height: 350vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p, h2 {
+    margin: 0px;
+}
+.content > h2, p {
+    padding: 20px;
+    width: 60%;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    border: solid 1px black;
+    box-shadow: 5px 5px 5px grey;
+  }
+  
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.container:hover .image {
+    opacity: 0.3;
+}
+  
+.container:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.list {
+    width: 60%;
+}
+form {
+    width: 60%;
+}

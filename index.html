@@ -1,9 +1,109 @@
 <!doctype html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <title>This is the title of the webpage!</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Eric Nguyen's Learning Site</title>
   </head>
   <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+    <div class="top">
+      <div class="header">
+        <h1>Me, Myself,<br>and I</h1>
+      </div>
+      <div class="navbar">
+        <a href="basic.html">
+          <div class="HTMLoption option">
+            <h3>
+              HTML
+            </h3>
+          </div>
+        </a>
+        <div class="CSSoption option">
+          <h3>
+            CSS
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Welcome to humble abode!</h2>
+      <p>My name is Eric. Hmmmmmmmm... I guess I should talk about myself, because how else would I fill up this white space? I am 16, and a senior for Oakland Tech. Ducks are my favorite animal! They are cute, cuddly, and just adorable delights. Sleeping is the best, but I lack it a lot for some reason. Computer Science is my favorite subject, and hope this page proves that fact. I have an average bestie friendo called Tiera. She is a nerdy dancer. That is all that needs to be known about her. Tiera if you are reading this, you are a NEEERRRRRRRRRRDDDDDDDDDDDDDD!!! I am not one to be creative, so blablabalbalbabalabalalablabalbaalbalbalabalbalbalabalbalabalbalablabalbalabalbalabalbalbaalbalbalabalbla!
+        <br>
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam similique autem ex saepe ducimus? Nostrum assumenda atque in vitae doloribus, soluta amet reprehenderit possimus perspiciatis voluptas magnam odit fugit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum soluta pariatur cumque recusandae, repellendus esse fugiat necessitatibus aperiam dicta suscipit, unde porro molestias ut culpa et excepturi tempore illo quo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi minus deleniti deserunt qui? Quos culpa, cumque at suscipit officia rerum. Porro sapiente natus ratione accusamus, expedita ut quae ex aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. A temporibus ratione magnam praesentium sint alias excepturi ipsum ad odio. Sunt asperiores qui velit. Magni beatae unde at ex eveniet dolore!
+      </p>
+      <div class="container">
+        <a href="https://en.wikipedia.org/wiki/Duck">
+          <img class="image" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/how-to-keep-ducks-call-ducks-1615457181.jpg?resize=640:*">
+        </a>
+        <div class="middle">
+          <div class="text">DUCKS ARE SO CUUUUTEEEE! YOU BETTER BELIEVE IT!!!!</div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        <a href="https://en.wikipedia.org/wiki/Sleep">
+          <img class="image" src="https://www.helpguide.org/wp-content/uploads/young-woman-smiling-in-bed-stretching-arms-out-768.jpg">
+        </a>
+        <div class="middle">
+          <div class="text">i need sleep</div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="list">
+        <h2>Things that I like</h2>
+        <ol>
+          <li>Sleep</li>
+          <li>Ducks</li>
+          <li>Computer Science</li>
+          <li>Sushi</li>
+          <li>Purple</li>
+          <li>Movies</li>
+          <ul> 
+              <li><em>A Silent Voice</em></li>
+              <li><em>End Game</em></li>
+              <li><em>Weathering with you</em></li>
+              <li><em>Inception</em></li>
+              <li><em>Snow Piercer</em></li>
+          </ul>
+        </ol>
+      </div>
+      <br>
+      <br>
+      <form method='get'> 
+        <h2>What do you know about me? Quizzz</h2>
+        <p>How old am I?</p>
+        <label for="age">Age:</label>
+        <input id="age" type="number" name="ageNum" placeholder="A Number">
+
+        <p>Are ducks the best and cutest animal in the world?</p>
+        <label for="yes">Yes:</label>
+        <input type="radio" id="yes" name="duck" value="yes">
+
+        <label for="yess">Yes:</label> 
+        <input type="radio" id="yess" name="duck" value="yes">
+
+        <label for="yesss">Yes:</label> 
+        <input type="radio" id="yesss" name="duck" value="yes">
+        
+        <p>How would you rate <em>A Silent Voice</em> (1-3)</p>
+        <select name="stars">
+            <option value="Great">5</option>
+            <option value="OnlyAnswer">5</option>
+            <option value="Stunning">5</option>
+            <option value="Amazing">100</option>
+            <option value="Good">4</option>
+            <option value="Gooder">4</option>
+        </select>
+
+        <p>Any other comments?</p>
+
+        <textarea name="name" rows="4" cols="30"></textarea>
+        <br>
+        <input type="submit" name="" value="Submit Feedback">
+      </form>
+    </div>
+    
   </body>
 </html>
