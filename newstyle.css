@@ -1,0 +1,31 @@
+.custom {
+    border: dashed 5px black;
+    width: 40%;
+    margin: 50px;
+    height: 300px;
+    color:aquamarine;
+    -webkit-text-stroke: 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://davidkleff.typepad.com/.a/6a0115704f318e970b022ad381dba7200d-pi");
+    background-size: cover;
+}
+
+#unique {
+    background-image: url("https://wallpaperaccess.com/full/427393.jpg");
+    background-size: cover;
+    -webkit-text-stroke: 2px white;
+    border-radius: 100px;
+    box-shadow: 5px 5px 5px black;
+    
+}
+.contain {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+table {
+    margin-top: 30px;
+}
+

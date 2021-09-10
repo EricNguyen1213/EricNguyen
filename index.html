@@ -1,109 +1,177 @@
-<!doctype html>
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html>
   <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Eric Nguyen's Learning Site</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newstyle.css">
+
+    <!-- STEP 1: Change the title tag to be Your Name -->
+    <title>Eric Nguyen</title>
+
+    <!-- STEP 2: INSERT THE BOOTSTRAP 4.6 links here or the Bootstrap 5 CSS link here in the head and the 
+         JavaScript Bundle link right before the closing body tag like it says here 
+         https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="top">
-      <div class="header">
-        <h1>Me, Myself,<br>and I</h1>
-      </div>
-      <div class="navbar">
-        <a href="basic.html">
-          <div class="HTMLoption option">
-            <h3>
-              HTML
-            </h3>
-          </div>
-        </a>
-        <div class="CSSoption option">
-          <h3>
-            CSS
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="content">
-      <h2>Welcome to humble abode!</h2>
-      <p>My name is Eric. Hmmmmmmmm... I guess I should talk about myself, because how else would I fill up this white space? I am 16, and a senior for Oakland Tech. Ducks are my favorite animal! They are cute, cuddly, and just adorable delights. Sleeping is the best, but I lack it a lot for some reason. Computer Science is my favorite subject, and hope this page proves that fact. I have an average bestie friendo called Tiera. She is a nerdy dancer. That is all that needs to be known about her. Tiera if you are reading this, you are a NEEERRRRRRRRRRDDDDDDDDDDDDDD!!! I am not one to be creative, so blablabalbalbabalabalalablabalbaalbalbalabalbalbalabalbalabalbalablabalbalabalbalabalbalbaalbalbalabalbla!
-        <br>
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam similique autem ex saepe ducimus? Nostrum assumenda atque in vitae doloribus, soluta amet reprehenderit possimus perspiciatis voluptas magnam odit fugit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum soluta pariatur cumque recusandae, repellendus esse fugiat necessitatibus aperiam dicta suscipit, unde porro molestias ut culpa et excepturi tempore illo quo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi minus deleniti deserunt qui? Quos culpa, cumque at suscipit officia rerum. Porro sapiente natus ratione accusamus, expedita ut quae ex aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. A temporibus ratione magnam praesentium sint alias excepturi ipsum ad odio. Sunt asperiores qui velit. Magni beatae unde at ex eveniet dolore!
-      </p>
-      <div class="container">
-        <a href="https://en.wikipedia.org/wiki/Duck">
-          <img class="image" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/how-to-keep-ducks-call-ducks-1615457181.jpg?resize=640:*">
-        </a>
-        <div class="middle">
-          <div class="text">DUCKS ARE SO CUUUUTEEEE! YOU BETTER BELIEVE IT!!!!</div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <div class="container">
-        <a href="https://en.wikipedia.org/wiki/Sleep">
-          <img class="image" src="https://www.helpguide.org/wp-content/uploads/young-woman-smiling-in-bed-stretching-arms-out-768.jpg">
-        </a>
-        <div class="middle">
-          <div class="text">i need sleep</div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <div class="list">
-        <h2>Things that I like</h2>
-        <ol>
-          <li>Sleep</li>
-          <li>Ducks</li>
-          <li>Computer Science</li>
-          <li>Sushi</li>
-          <li>Purple</li>
-          <li>Movies</li>
-          <ul> 
-              <li><em>A Silent Voice</em></li>
-              <li><em>End Game</em></li>
-              <li><em>Weathering with you</em></li>
-              <li><em>Inception</em></li>
-              <li><em>Snow Piercer</em></li>
+
+    <nav class="navbar navbar-dark bg-dark">
+    <!--STEP 3:  ADD A DARK NAVBAR HERE WITH YOUR NAME IN THE TOP LEFT.  
+        Also, create a link in the navbar TO the HTML file that you made in the HTML assessment -->
+        <a class="navbar-brand" href="#">Eric Nguyen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="old-index">Old Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                HTML
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="basic.html">The Basics</a>
+                <a class="dropdown-item" href="HTML_AssessmentOne.html">Assessment One</a>
+                <a class="dropdown-item" href="HTML_AssessmentTwo.html">Assessment Two</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                CSS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="css.html">The Basics</a>
+                <a class="dropdown-item" href="CSS_Assessment.html">Assessment</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Bootstrap
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="bootstrap.html">The Basics</a>
+                <a class="dropdown-item" href="Bootstrap_Project_Main.html">Assessment</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Blank</a>
+            </li>
           </ul>
-        </ol>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+    <div class="contain">
+      <div class="custom">
+        <!-- Add a class with custom styling to this div -->
+        <h1>Welcome!</h1>
       </div>
-      <br>
-      <br>
-      <form method='get'> 
-        <h2>What do you know about me? Quizzz</h2>
-        <p>How old am I?</p>
-        <label for="age">Age:</label>
-        <input id="age" type="number" name="ageNum" placeholder="A Number">
-
-        <p>Are ducks the best and cutest animal in the world?</p>
-        <label for="yes">Yes:</label>
-        <input type="radio" id="yes" name="duck" value="yes">
-
-        <label for="yess">Yes:</label> 
-        <input type="radio" id="yess" name="duck" value="yes">
-
-        <label for="yesss">Yes:</label> 
-        <input type="radio" id="yesss" name="duck" value="yes">
-        
-        <p>How would you rate <em>A Silent Voice</em> (1-3)</p>
-        <select name="stars">
-            <option value="Great">5</option>
-            <option value="OnlyAnswer">5</option>
-            <option value="Stunning">5</option>
-            <option value="Amazing">100</option>
-            <option value="Good">4</option>
-            <option value="Gooder">4</option>
-        </select>
-
-        <p>Any other comments?</p>
-
-        <textarea name="name" rows="4" cols="30"></textarea>
-        <br>
-        <input type="submit" name="" value="Submit Feedback">
-      </form>
+  
+      <div class="custom" id="unique">
+        <!-- Add the same class as before to apply the same styling to this div.
+             ALSO add an id to this div to apply something unique. -->
+        <h1>Duck</h1>
+      </div>
     </div>
-    
+
+    <!-- STEP 4: CREATE A PHOTO CAROUSEL HERE -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/how-to-keep-ducks-call-ducks-1615457181.jpg?resize=640:*" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://a-z-animals.com/media/2019/11/Duck-in-pond.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ytimg.com/vi/U-C0I-Ks14M/maxresdefault.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/XXGN1M3GBo32T1FubsLIXYABDq8=/1660x934/smart/filters:no_upscale()/cloudfront-us-east-1.images.arcpublishing.com/dmn/YQ74WW6ZMFH7BDIZ67IWV424MA.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://bostonglobe-prod.cdn.arcpublishing.com/resizer/V_TWw3d46taFqkilq_p89fZ8Ank=/1440x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/YIRLV6QZ25CJ7CZAYVLVDAXOVU.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://live-production.wcms.abc-cdn.net.au/12bb44bae623be0eba4491cdf86bc9cb?impolicy=wcms_crop_resize&cropH=810&cropW=1439&xPos=0&yPos=148&width=862&height=485" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- STEP 5: ADD Bootstrap styling to the table below so it has striped rows 
+         and a header row and add at least three more rows. Feel free to change the text.-->
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">A Person's Name</th>
+          <th scope="col">Their Fav Animal that starts with the first letter of their first name</th>
+          <th scope="col"># of toes that animal has</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Eric</td>
+          <td>Educk</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Tiera</td>
+          <td>Tiger</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Marco</td>
+          <td>Mred Panda</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Kevin</td>
+          <td>Kangaroo</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Vic</td>
+          <td>Vacuum</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+
   </body>
 </html>
